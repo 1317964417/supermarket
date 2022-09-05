@@ -11,6 +11,11 @@
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+    <script>
+        //jsp语法，如有不懂可以打开浏览器查看，在打包时会转换成我们熟悉
+        console.log('<%= BASE_URL %>');
+        console.log('<%= htmlWebpackPlugin.options.title %>');
+    </script>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>

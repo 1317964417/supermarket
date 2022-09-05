@@ -17,9 +17,11 @@
     name:'TabbarItem',
     props: {
       path: String,
+      
       activeColor: {
         type: String,
-        default: 'red'
+        default: 'red',
+        // required:true
       }
     },
     data() {
@@ -33,6 +35,8 @@
         // /home -> item1(/category) = false
         // /home -> item1(/cart) = true
         // /home -> item1(/profile) = true
+        console.log('通过vue-router获得的路径：'+this.path);
+        console.log('本身设置好的路径：'+this.$route.path);
         return this.$route.path.indexOf(this.path) !== -1
       },
       activeStyle() {

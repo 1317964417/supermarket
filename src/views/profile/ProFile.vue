@@ -1,10 +1,10 @@
 <template>
-    <h2>首页内容</h2>
+    <h2>我的内容</h2>
 </template>
 
 <script>
   export default {
-    name: "Home"
+    name: "ProFile"
   }
 </script>
 

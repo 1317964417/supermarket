@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-
+const ProFile = () => import('../views/profile/ProFile')
 const Home = () => import('../views/home/Home')
+const CateGory = () => import('../views/category/CateGory')
+const Cart = () => import('../views/cart/Cart')
 
 Vue.use(Router)
 
@@ -33,18 +35,19 @@ const routes = [
         //     }
         // ]
     },
-    // {
-    //     path: '/about',
-    //     component: about
-    // },
-    // {
-    //     path: '/user/:userId',
-    //     component: user
-    // },
-    // {
-    //     path: '/profile',
-    //     component: profile
-    // }
+
+    {
+        path: '/category',
+        component: CateGory
+    },
+    {
+        path: '/profile',
+        component: ProFile
+    },
+    {
+        path: '/cart',
+        component: Cart
+    },
 
 ]
 
