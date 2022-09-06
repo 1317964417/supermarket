@@ -17,7 +17,6 @@
     name:'TabbarItem',
     props: {
       path: String,
-      
       activeColor: {
         type: String,
         default: 'red',
